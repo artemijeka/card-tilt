@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Cards</title>
+ <link rel="stylesheet" href="./style.min.css">
+</head>
+
+<body>
+
+ <section class="cards">
+
+  <figure class="card">
+   <img src="" alt="" class="card__img">
+   <figcaption class="card__content">
+    <h2 class="card__title">01</h2>
+    <h3 class="card__subtitle">Card One</h3>
+    <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum eligendi et quisquam minus eius
+     aliquid.</p>
+    <a class="card__link" href="#">Read More</a>
+   </figcaption>
+  </figure>
+
+  <figure class="card">
+   <img src="" alt="" class="card__img">
+   <figcaption class="card__content">
+    <h2 class="card__title">02</h2>
+    <h3 class="card__subtitle">Card Two</h3>
+    <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quia iure iusto minima? Ducimus, ratione.</p>
+    <a class="card__link" href="#">Read More</a>
+   </figcaption>
+  </figure>
+
+  <figure class="card">
+   <img src="" alt="" class="card__img">
+   <figcaption class="card__content">
+    <h2 class="card__title">03</h2>
+    <h3 class="card__subtitle">Card Three</h3>
+    <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente error provident impedit! Ab, porro suscipit.</p>
+    <a class="card__link" href="#">Read More</a>
+   </figcaption>
+  </figure>
+
+ </section>
+
+
+
+ <script src="./vanilla-tilt.js"></script>
+ <script>
+  VanillaTilt.init(document.querySelectorAll(".card"), {
+   max: 25,
+   speed: 400,
+   glare: true,   // if it should have a "glare" effect
+   "max-glare": 0.5      // the maximum "glare" opacity (1 = 100%, 0.5 = 50%)
+  });
+ </script>
+</body>
+
+</html>
